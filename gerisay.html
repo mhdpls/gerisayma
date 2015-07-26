@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/countdowncube.min.css" />
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/countdowncube.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		
+			$('#gerisay').countdownCube({
+			  target: new Date('January 02, 2016 23:59:00'),//ay gün,yıl saat:dakika:saniye
+			  cubeSize: 100,//büyüklük
+			  background: '#d12c69',//arkaplan rengi
+			  color: '#fff'//font rengi
+			 });
+			
+			$(".countdownCubeTitleDiv").each(function(i){//Türkçeleştirme
+				if(i==0){ $(this).text("Yıl") }
+				if(i==1){ $(this).text("Ay") }
+				if(i==2){ $(this).text("Gün") }
+				if(i==3){ $(this).text("Saat") }
+				if(i==4){ $(this).text("Dakika") }
+				if(i==5){ $(this).text("Saniye") }
+			})
+			
+		})
+	</script>
+
+</head>
+<body>
+	
+	<div id="gerisay"></div>
+	
+</body>
+</html>

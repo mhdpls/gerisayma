@@ -1,2 +1,0 @@
-# gerisayma
-gerisayma scripti
